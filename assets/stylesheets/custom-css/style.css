@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee|Muli:300,400,600,700,800,900|Poppins:300,400,500,600,700,800,900|Prompt:300,400,500,600,700,800|Cookie:300,400,600,700,800,900&display=swap');
+/*@import url('font-awesome.css');*/
+/*@import url('flaticon.css');*/
+@import url(//db.onlinewebfonts.com/c/1e46dc4b5a94ebe8b2ec353f92a1650f?family=Flaticon);
+/*@import url('animate.css');*/
+/*@import url('owl.css');
+@import url('jquery-ui.css');
+@import url('animation.css');
+@import url('jquery.fancybox.min.css');
+@import url('jquery.mCustomScrollbar.min.css');*/
+* {
+	margin:0px;
+	padding:0px;
+	border:none;
+	outline:none;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size:15px;
+	/*color:#777777;*/
+	line-height:1.7em;
+	font-weight:400;
+	background:#ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+.semi-black-bg {
+	background-color: #222222;
+}
+.default-purple {
+	color: #B988B1;
+}
+.default-red {
+	color: #FC5655;
+}
+.font-cookie {
+	font-family: 'Cookie', sans-serif;
+}
+.font-prompt{
+	font-family: 'Prompt', sans-serif;
+}
+.font-handlee {
+	font-family: 'Handlee', cursive;
+}
+.font-grey {
+	color: #777777;
+}
+h1,h2,h3,h4,h5,h6 {
+	position:relative;
+	font-weight:normal;
+	margin:0px;
+	background:none;
+	line-height:1.6em;
+	font-family: 'Prompt', sans-serif;
+}
+ul,ol {
+	list-style: none;
+	margin: 0;
+}
+ul#top-nav li a{
+	color: white;
+}
+ul#top-nav li a:hover{
+	color: #B988B1;
+}
+ul#top-nav li a:active{
+	color: #B988B1;
+}
+header {
+	position: absolute;
+	z-index: 999;
+}
+header nav#main-nav {
+	border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+header nav#main-nav,header nav#sticky-nav,header nav#side-menu-nav {
+}
+#side-menu-nav .close-side-nav-btn {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 30px;
+	cursor: pointer;
+}
+a.no-default-style {
+	color: inherit;
+	text-decoration: none;
+	margin-bottom: 0;
+}
+a.no-default-style:hover {
+	text-decoration: none;
+}
+div#side-menu-nav-wrapper {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+}
+div#side-menu-nav-wrapper > div.overlay{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.li-border-top {
+	border-top: 1px solid rgba(0,0,0,0.10); 
+}
+.li-border-y {
+	border-top: 1px solid rgba(0,0,0,0.10); 
+	border-bottom: 1px solid rgba(0,0,0,0.10); 
+}
+.fixed {
+	position: fixed;
+}
+nav#sticky-nav #sticky-nav-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+div#side-menu-nav-wrapper div.overlay #menu-div{
+	max-width: 350px;
+	position: absolute;
+	z-index: 1050;
+	right: 0;
+}
+ul#side-menu-ul li a{
+	color: #000;
+}
+ul#side-menu-ul li a:hover{
+	color: #B988B1;
+}
+ul#side-menu-ul li a:active{
+	color: #B988B1;
+}
+section#top {
+	background: url('../../imgs/index-top_bg-2.jpg') no-repeat center; 
+	/*background-size: 120% 120%;*/
+	/*background-position: 100% 100%;*/
+}
+section#about-section div#about-artist p.font-handlee{
+	border-radius: 10px;
+	background-color: #E7F9F5;
+}
+section#about-section div#about-artist ~ hr{
+	background-color: #fbf2f1;
+}
+.font-s-30 {
+	font-size: 30px;
+}
+.font-s-15 {
+	font-size: 15px;
+}
+.font-s-20 {
+	font-size: 20px;
+}
+.wink-img {
+	width: 80px;
+}
+.ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
+    -ms-box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
+    -o-box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
+    -webkit-animation: ripple 3s infinite;
+    -moz-animation: ripple 3s infinite;
+    -ms-animation: ripple 3s infinite;
+    -o-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+}
+.get-claired .animated {
+	border-radius: 10px;
+	background-color: #E7F9F5;
+}
+.get-claired {
+	font-size: 16px;
+	display: inline-flex;
+	cursor: pointer;
+	color: #000;
+}
+.get-claired:hover {
+	border-bottom: 1px solid #000;
+}
+section#about-section div#about-artist h2 {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+/*section#about-section div#what-we-do {
+}*/
+section#about-section div#what-we-do h3 {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 1.2em;
+}
+@media screen and (max-width:399px) {
+	section#top {
+		height: 100vh;
+		background-size: 120% 120%;
+		background-position: 100% 100%;
+	}
+	button.navbar-toggler {
+		-ms-flex-preferred-size: 0;
+		flex-basis: 0;
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+		max-width: 100%;
+	}
+}
+@media screen and (min-width:400px) {
+	section#top {
+		height: 100vh;
+		background-size: 150% 150%;
+		background-position: 100% 100%;
+	}
+}
+@media screen and (min-width:576px) {
+	section#top {
+		height: 100vh;
+		background-size: 150% 150%;
+		background-position: 100% 100%;
+	}
+}
+@media screen and (min-width:768px) {
+	section#top {
+		height: 100vh;
+	}
+}
+@media screen and (min-width:992px) {
+ 	section#top {
+		height: 140vh;
+	}
+}	
+@media screen and (min-width:1200px) {
+}
