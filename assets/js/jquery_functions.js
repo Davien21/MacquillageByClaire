@@ -41,10 +41,10 @@ $(document).ready(function(){
 		$('#side-menu-nav').removeClass('show-sidebar');
 		hideSideBar();
 	})
-	$('#what-we-do a.get-claired').mouseenter(function(){
-		$('#what-we-do a.get-claired .animated').addClass('bounce')
-	});
-	$('#what-we-do a.get-claired').mouseleave(function(){
-		$('#what-we-do a.get-claired .animated').removeClass('bounce')
-	});
+	// $('#what-we-do a.get-claired').mouseenter(function(){
+	// 	$('#what-we-do a.get-claired .animated').addClass('bounce infinite')
+	// });
+	// $('#what-we-do a.get-claired').mouseleave(function(){
+	// 	$('#what-we-do a.get-claired .animated').removeClass('bounce infinite')
+	// });
 }); 
