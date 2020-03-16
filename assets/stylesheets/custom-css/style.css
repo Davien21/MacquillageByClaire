@@ -13,6 +13,7 @@
 	padding:0px;
 	border:none;
 	outline:none;
+	transition: 0.4s ease;
 }
 body {
 	font-family: 'Poppins', sans-serif;
@@ -28,10 +29,13 @@ body {
 	background-color: #222222;
 }
 .default-purple {
-	color: #B988B1;
+	color: #FC5655;
 }
 .default-red {
 	color: #FC5655;
+}
+.default-bg-red {
+	background-color: #FC5655;
 }
 .font-cookie {
 	font-family: 'Cookie', sans-serif;
@@ -141,8 +145,13 @@ section#about-section div#about-artist p.font-handlee{
 	border-radius: 10px;
 	background-color: #E7F9F5;
 }
-section#about-section div#about-artist ~ hr{
-	background-color: #fbf2f1;
+.blue-hl {
+	border-radius: 10px;
+	background-color: #E7F9F5;
+}
+
+.semi-bold {
+	font-weight: 550;
 }
 .font-s-30 {
 	font-size: 30px;
@@ -153,35 +162,53 @@ section#about-section div#about-artist ~ hr{
 .font-s-20 {
 	font-size: 20px;
 }
-.wink-img {
+#wink-img {
 	width: 80px;
 }
+/*@-webkit-keyframes ripple {
+    70% {box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+}
+
+@keyframes ripple {
+    70% {box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+}*/
 .ripple {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 70px;
-    width: 70px;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
-    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
-    -ms-box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
-    -o-box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
-    -webkit-animation: ripple 3s infinite;
-    -moz-animation: ripple 3s infinite;
-    -ms-animation: ripple 3s infinite;
-    -o-animation: ripple 3s infinite;
-    animation: ripple 3s infinite;
+  padding: 27px 0;
+  margin: auto;
+  margin-top: 5rem;
+  /*background-color: #fff;*/
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position:relative;
+  animation: ripple 3s linear infinite;
+}
+.ripple::before,
+.ripple::after{
+  width: 80px;
+  height: 78px;
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius: 50%;
+  animation: ripple 3s linear infinite 1s;
+}
+.ripple::after {
+  animation: ripple 3s linear infinite 2s;
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(255,255,255, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 8rem rgba(255,255,255, 0);
+  }
 }
 .get-claired .animated {
 	border-radius: 10px;
@@ -203,12 +230,76 @@ section#about-section div#about-artist h2 {
 }
 /*section#about-section div#what-we-do {
 }*/
+section#about-section div#about-artist ~ hr{
+	background-color: #fbf2f1;
+}
+section#about-section div.image-div {
+	width: 100%;
+	height: auto;
+}
+section#about-section div#content-extra .counter.font-handlee{
+	font-size: 35px;
+}
+section#services-section h2 {
+	font-weight: 600;
+	font-size: 35px;
+	letter-spacing: 1px;
+}
 section#about-section div#what-we-do h3 {
 	font-size: 32px;
 	font-weight: 500;
 	line-height: 1.2em;
 }
+section#about-section div.image-div div.circle-play-btn {
+	z-index: 1;
+	left: 45%;
+}
+section#about-section div.image-div div.circle-play-btn img {
+	width: 80px;
+	height: 80px;
+
+	/*transform: translateY(50%);*/
+}
+section#about-section div.image-div img[alt='makeup brushes'] {
+	width: 100%;
+	max-height: 550px;
+	/*transform: translateY(50%);*/
+}
+section#services-section div#content-wrapper h3{
+	color: black;
+	font-size: 24px;
+	transition: all 0.4s;
+}
+section#services-section div#content-wrapper h3:hover{
+	color: #FC5655;
+}
+section#services-section .makeup-icons {
+	width: 60px;
+	height: 55px;
+}
+
+
+section#services-section .service-box {
+	transition: all 0s ease;
+}
+section#services-section .service-box .btn-box {
+	opacity:0.4;
+	transition: all 0.4s ease;
+}
+section#services-section .service-box:hover{
+	box-shadow:0px 0px 15px rgba(0,0,0,0.20);
+}
+
+section#services-section .service-box:hover .btn-box{
+	opacity:1;
+}
+section#services-section .service-box .btn-box:hover button{
+	background-color: #222222;
+}
 @media screen and (max-width:399px) {
+	body {
+		overflow-x: hidden;
+	}
 	section#top {
 		height: 100vh;
 		background-size: 120% 120%;
@@ -224,6 +315,9 @@ section#about-section div#what-we-do h3 {
 	}
 }
 @media screen and (min-width:400px) {
+	body {
+		overflow-x: hidden;
+	}
 	section#top {
 		height: 100vh;
 		background-size: 150% 150%;
@@ -231,6 +325,9 @@ section#about-section div#what-we-do h3 {
 	}
 }
 @media screen and (min-width:576px) {
+	body {
+		overflow-x: hidden;
+	}
 	section#top {
 		height: 100vh;
 		background-size: 150% 150%;
@@ -238,11 +335,17 @@ section#about-section div#what-we-do h3 {
 	}
 }
 @media screen and (min-width:768px) {
+	body {
+		overflow-x: hidden;
+	}
 	section#top {
 		height: 100vh;
 	}
 }
 @media screen and (min-width:992px) {
+	body {
+		overflow-x: auto;
+	}
  	section#top {
 		height: 140vh;
 	}

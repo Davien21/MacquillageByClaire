@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	let hideSideBar = () => {
 		$('body').css('overflow','auto');
@@ -21,7 +22,10 @@ $(document).ready(function(){
 			$('header nav#sticky-nav #sticky-nav-wrapper').removeClass('fadeInDown')
 			$('header nav#sticky-nav #sticky-nav-wrapper').addClass('fadeOutUp')
 		}
+
+
 	})
+
 	$('button.navbar-toggler').click(function(){
 		$('#side-menu-nav').toggleClass('show-sidebar');
 		if($('#side-menu-nav').hasClass('show-sidebar')) {
@@ -29,6 +33,7 @@ $(document).ready(function(){
 		}else if(!$('#side-menu-nav').hasClass('show-sidebar')){
 			hideSideBar();
 		}
+
 	})
 	$('#side-menu-nav #menu-div').click(function(e){
 		e.stopPropagation();
@@ -40,7 +45,9 @@ $(document).ready(function(){
 	$('.close-side-nav-btn').click(function(){
 		$('#side-menu-nav').removeClass('show-sidebar');
 		hideSideBar();
-	})
+	});
+		
+	  
 	// $('#what-we-do a.get-claired').mouseenter(function(){
 	// 	$('#what-we-do a.get-claired .animated').addClass('bounce infinite')
 	// });
