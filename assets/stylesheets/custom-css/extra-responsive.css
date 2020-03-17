@@ -21,6 +21,9 @@
 .relative {
 	position: relative;
 }
+.bg-none {
+	background: none;
+}
 .border-black {
 	border: 1px solid #000;
 }
