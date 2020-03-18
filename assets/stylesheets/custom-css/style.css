@@ -171,8 +171,8 @@ ul#side-menu-ul li a:active{
 section#top {
 	background: url('../../imgs/index-top_bg-2.jpg') center; 
 	position: relative;
-	padding-top: 215px;
-	padding-bottom: 80px;
+	padding-top: 180px;
+	padding-bottom: 40px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
@@ -527,9 +527,7 @@ section#events-section form#quick-appointment-form input:focus{
 		font-size: 	64px;
 		line-height: 1em;
 	}
-	section#top div.content-box div.inner-column{
-	    padding-top: 130px;
-	}
+	
 
 	section#events-section  div.content-box{
 		border-radius:50%;
@@ -537,12 +535,20 @@ section#events-section form#quick-appointment-form input:focus{
 	}
 }
 @media screen and (min-width:768px) {
-	section#top div.content-box div.inner-column p.title{
-	   font-size: 42px;
-	}
 	html {
 		overflow-x: hidden;
 	}
+	section#top div.content-box div.inner-column{
+	    padding-top: 130px;
+	}
+	section#top div.content-box div.inner-column p.title{
+	   font-size: 42px;
+	}
+	section#top {
+		padding-top: 215px;
+		padding-bottom: 80px;
+	}
+	
 	section#top div.content-box div.patterns{
 		background-image: url('../../imgs/bgs/pattern-1.png');
 		position: absolute;
