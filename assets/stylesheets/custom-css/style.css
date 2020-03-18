@@ -109,8 +109,8 @@ header {
 header nav#main-nav {
 	border-bottom: 1px solid rgba(255,255,255,0.15);
 }
-header nav#main-nav,header nav#sticky-nav,header nav#side-menu-nav {
-}
+
+
 #side-menu-nav .close-side-nav-btn {
 	position: absolute;
 	right: 0;
@@ -169,10 +169,27 @@ ul#side-menu-ul li a:active{
 	color: #B988B1;
 }
 section#top {
-	background: url('../../imgs/index-top_bg-2.jpg') no-repeat center; 
-	/*background-size: 120% 120%;*/
-	/*background-position: 100% 100%;*/
+	background: url('../../imgs/index-top_bg-2.jpg') center; 
+	position: relative;
+	padding-top: 215px;
+	padding-bottom: 80px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	color: white;
 }
+section#top div.content-box{
+	position: relative;
+	z-index: 1;
+}
+
+section#top div.content-box div.inner-column{
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 150px;
+    padding-left: 50px; 
+}
+
 section#about-section div#about-artist p.font-handlee{
 	border-radius: 10px;
 	background-color: #E7F9F5;
@@ -487,9 +504,9 @@ section#events-section form#quick-appointment-form input:focus{
 		overflow-x: hidden;
 	}
 	section#top {
-		height: 100vh;
-		background-size: 120% 120%;
-		background-position: 100% 100%;
+		/*height: 100vh;*/
+		/*background-size: 120% 120%;*/
+		/*background-position: 100% 100%;*/
 	}
 	button.navbar-toggler {
 		-ms-flex-preferred-size: 0;
@@ -509,11 +526,7 @@ section#events-section form#quick-appointment-form input:focus{
 	html {
 		overflow-x: hidden;
 	}
-	section#top {
-		height: 100vh;
-		background-size: 150% 150%;
-		background-position: 100% 100%;
-	}
+	
 	section#events-section  div.content-box{
 		padding: 50px 30px;
 	}
@@ -522,11 +535,7 @@ section#events-section form#quick-appointment-form input:focus{
 	html {
 		overflow-x: hidden;
 	}
-	section#top {
-		height: 100vh;
-		background-size: 150% 150%;
-		background-position: 100% 100%;
-	}
+	
 	section#events-section  div.content-box{
 		border-radius:50%;
 		padding: 95px 30px;
@@ -536,17 +545,42 @@ section#events-section form#quick-appointment-form input:focus{
 	html {
 		overflow-x: hidden;
 	}
-	section#top {
-		height: 100vh;
+	section#top div.content-box div.patterns{
+		background-image: url('../../imgs/bgs/pattern-1.png');
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 474px;
+		height: 674px;
+		display: inline-block; 
 	}
+	section#top div.content-box div.patterns::before{
+		position: absolute;
+		content: '';
+		left: 35px;
+		top: -20px;
+		right: -20px;
+		bottom: -20px;
+		z-index: -1;
+		border: 1px dashed #ffffff;
+	}
+	section#top div.content-box div.patterns::after{
+		position: absolute;
+		content: '';
+		left: 0px;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: -1;
+		background-color: #fc5655;
+	}
+
 }
 @media screen and (min-width:992px) {
 	body {
 		overflow-x: auto;
 	}
- 	section#top {
-		height: 140vh;
-	}
+ 	
 }	
 @media screen and (min-width:1200px) {
 }
