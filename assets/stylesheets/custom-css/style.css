@@ -187,7 +187,10 @@ section#top div.content-box div.inner-column{
     position: relative;
     padding-top: 130px;
     padding-bottom: 150px;
-    padding-left: 50px; 
+}
+section#top div.content-box div.inner-column p.title{
+   font-size: 30px;
+   line-height: 1.1em;
 }
 
 section#about-section div#about-artist p.font-handlee{
@@ -274,6 +277,11 @@ section#about-section div#about-artist h2 {
 }
 /*section#about-section div#what-we-do {
 }*/
+section#top h1{
+	font-size: 	32px;
+	line-height: 1em;
+}
+
 section#about-section div#about-artist ~ hr{
 	background-color: #fbf2f1;
 }
@@ -452,15 +460,7 @@ section#events-section  div.content-box{
 	animation-duration: 1500ms;
 	animation-delay: 0ms;
 }
-section#events-section  div.content-box::before{
-	position: absolute;
-	content: '';
-	left: 0px;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	background-color: rgba(252,86,85,0.90);
-}
+
 section#events-section  div.content-box::before{
 	position: absolute;
 	content: '';
@@ -503,11 +503,7 @@ section#events-section form#quick-appointment-form input:focus{
 	body {
 		overflow-x: hidden;
 	}
-	section#top {
-		/*height: 100vh;*/
-		/*background-size: 120% 120%;*/
-		/*background-position: 100% 100%;*/
-	}
+
 	button.navbar-toggler {
 		-ms-flex-preferred-size: 0;
 		flex-basis: 0;
@@ -519,8 +515,7 @@ section#events-section form#quick-appointment-form input:focus{
 
 	section#events-section  div.content-box{
 		padding: 50px 30px;
-	}
-	
+	}	
 }
 @media screen and (min-width:400px) {
 	html {
@@ -530,18 +525,26 @@ section#events-section form#quick-appointment-form input:focus{
 	section#events-section  div.content-box{
 		padding: 50px 30px;
 	}
+
 }
 @media screen and (min-width:576px) {
 	html {
 		overflow-x: hidden;
 	}
-	
+	section#top h1{
+		font-size: 	64px;
+		line-height: 1em;
+	}
+
 	section#events-section  div.content-box{
 		border-radius:50%;
 		padding: 95px 30px;
 	}
 }
 @media screen and (min-width:768px) {
+	section#top div.content-box div.inner-column p.title{
+	   font-size: 42px;
+	}
 	html {
 		overflow-x: hidden;
 	}
@@ -579,6 +582,9 @@ section#events-section form#quick-appointment-form input:focus{
 @media screen and (min-width:992px) {
 	body {
 		overflow-x: auto;
+	}
+	section#top div.content-box div.inner-column{
+	    padding-left: 50px; 
 	}
  	
 }	
