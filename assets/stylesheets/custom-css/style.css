@@ -491,11 +491,17 @@ section#events-section form#quick-appointment-form input:focus{
 	bottom: 0;
 }
 
+
 @media screen and (max-width:399px) {
 	body {
 		overflow-x: hidden;
 	}
-
+	section#services-section .service-box h3 a div{
+		width: 200px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 	button.navbar-toggler {
 		-ms-flex-preferred-size: 0;
 		flex-basis: 0;
@@ -527,6 +533,13 @@ section#events-section form#quick-appointment-form input:focus{
 		font-size: 	64px;
 		line-height: 1em;
 	}
+	/*section#services-section .service-box h3 a div{
+		width: 200px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}*/
+
 	
 
 	section#events-section  div.content-box{
@@ -588,7 +601,7 @@ section#events-section form#quick-appointment-form input:focus{
 }
 @media screen and (min-width:992px) {
 	body {
-		overflow-x: auto;
+		/*overflow-x: auto;*/
 	}
 	section#top div.content-box div.inner-column{
 	    padding-left: 50px; 
