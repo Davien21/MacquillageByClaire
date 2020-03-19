@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Handlee|Muli:300,400,600,700,800,900|Poppins:300,400,500,600,700,800,900|Prompt:300,400,500,600,700,800|Cookie:300,400,600,700,800,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Handlee|Muli:300,400,600,700,800,900|Poppins:300,400,500,600,700,800,900|Prompt:300,400,500,600,700,800|Cookie:300,400,600,700,800,900&display=swap');*/
 /*@import url('font-awesome.css');*/
 @import url('flaticon.css');
 /*@import url('animate.css');*/
@@ -490,7 +490,20 @@ section#events-section form#quick-appointment-form input:focus{
 	right: 0;
 	bottom: 0;
 }
+/*Swiper section Start*/
+ .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 
+}     
+/*Swiper section End*/
 
 @media screen and (max-width:399px) {
 	body {

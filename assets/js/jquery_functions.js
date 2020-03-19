@@ -22,8 +22,6 @@ $(document).ready(function(){
 			$('header nav#sticky-nav #sticky-nav-wrapper').removeClass('fadeInDown')
 			$('header nav#sticky-nav #sticky-nav-wrapper').addClass('fadeOutUp')
 		}
-
-
 	})
 
 	$('button.navbar-toggler').click(function(){
@@ -33,7 +31,6 @@ $(document).ready(function(){
 		}else if(!$('#side-menu-nav').hasClass('show-sidebar')){
 			hideSideBar();
 		}
-
 	})
 	$('#side-menu-nav #menu-div').click(function(e){
 		e.stopPropagation();
@@ -46,8 +43,7 @@ $(document).ready(function(){
 		$('#side-menu-nav').removeClass('show-sidebar');
 		hideSideBar();
 	});
-	
-
+   
 
      
 
